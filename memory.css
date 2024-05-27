@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 10px solid purple;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70vh; 
+  }
+
+.container1 {
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.imagem {
+    width: 50%;
+    height: auto;
+    position: fixed;
+    display: block;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        width: 90%; 
+    }
+    .text {
+        font-size: 20px;
+    }
+}
+
+.text {
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 50px; 
+    text-align: left; 
+    position: absolute; 
+  }
+
+.botao {
+    position: fixed;
+    right: 20px; 
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.button1, .button2, .button3, .button4 {
+    width: 100%; 
+    max-width: 250px; 
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #2D21B4;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .botao {
+        right: 20px;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 20px;
+    }
+
+    .button1, .button2, .button3, .button4 {
+        width: 250px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .botao {
+        width: 100%; 
+        max-width: 100%; 
+        left: 0;
+        right: 0;
+        top: 0;
+        transform: none;
+        padding: 10px;
+        align-items: center; 
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
