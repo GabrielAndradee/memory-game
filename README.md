@@ -9,7 +9,6 @@ A simple and fun game
 
 ## Open scope to closed scope 
   - Create the initial screen with the game and account creation
-  - implement the account creation part (without a database)
   - Create the navigation from the initial screen to the chosen modes
   - Depending on the chosen mode, the application will behave differently
   - Begin the creation of the memory game
