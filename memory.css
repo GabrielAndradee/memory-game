@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: black;
     color: white;
@@ -16,6 +10,7 @@ body {
 }
 
 header {
+    height: 80px;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -35,67 +30,46 @@ main {
 }
 
 .container {
-    position: relative;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    height: 70vh; 
+    justify-content: space-around;
+    flex-direction: row;
+    min-height: calc(100vh - 126px);
+    width: 100vw;
+    margin-inline: 200px;
   }
 
 .container1 {
     display: flex;
-    justify-content: center;
+    height: 300px;
+    width: 600px;
     align-items: center;
-    position: relative;
-    width: 100%;
-    height: 300px; 
-    background-color: #f0f0f0; 
+    justify-content: center;
 
 }
 
 .imagem {
-    width: 50%;
-    height: auto;
-    position: fixed;
-    display: block;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@media (max-width: 1200px) {
-    .container1 {
-        width: 90%; 
-    }
-    .text {
-        font-size: 20px;
-    }
+    height: 300px;
+    width: 600px;
+    position: relative;
 }
 
 .text {
     position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translate(-8%, -50%); 
-    font-size: 50px; 
+    font-size: 40px; 
     white-space: nowrap;
-    position: fixed;
   }
 
   .botao {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px; 
+    height: calc(100vh - 126px);
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
     gap: 20px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.button1, .button2, .button3, .button4 {
+.btn{
     width: 100%;
     max-width: 300px; 
     height: 60px;
@@ -106,43 +80,11 @@ main {
     background-color: #2D21B4;
     color: white;
     text-align: center;
-}
-
-@media (min-width: 768px) {
-    .botao {
-        right: auto;
-        left: 10%; 
-        transform: translateX(-50%) translateY(-50%);
-        align-items: center; 
-        width: auto; 
-        max-width: 100%; 
-        margin-left: -22px;
-    }
-
-    .imagem{
-        margin-top: -250px;
-        width: 80%;
-    }
-
-    .text {
-        margin-top: -220px;
-        margin-left: -22px;
-        font-size: 20px;
-        white-space: nowrap;
-    }
-}
-
-@media (min-width: 769px) {
-    .botao {
-        right: 20px; 
-        left: auto;
-        transform: translateY(-50%);
-        align-items: flex-end; 
-        flex-direction: column;
-    }
+    cursor: pointer;
 }
 
 .footer {
+    height: 36px;
     text-align: center;
     padding: 10px;
     width: 100%;
