@@ -41,22 +41,22 @@ main {
 
 .container1 {
     display: flex;
-    height: 300px;
-    width: 600px;
+    height: 500px;
+    width: 900px;
     align-items: center;
     justify-content: center;
 
 }
 
 .imagem {
-    height: 300px;
-    width: 600px;
+    height: 800px;
+    width: 900px;
     position: relative;
 }
 
 .text {
     position: absolute;
-    font-size: 40px; 
+    font-size: 80px; 
     white-space: nowrap;
   }
 
@@ -67,11 +67,11 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    width: 650px;
 }
 
 .btn{
     width: 100%;
-    max-width: 300px; 
     height: 60px;
     font-weight: bold;
     font-size: 18px; 
@@ -93,3 +93,7 @@ main {
     position: fixed;
     bottom: 0;
 }
+
+
+
+@media
