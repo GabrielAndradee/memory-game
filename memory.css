@@ -31,9 +31,9 @@ main {
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     min-height: calc(100vh - 126px);
     width: 100vw;
     margin-inline: 200px;
@@ -56,7 +56,7 @@ main {
 
 .text {
     position: absolute;
-    font-size: 80px; 
+    font-size: 70px; 
     white-space: nowrap;
   }
 
@@ -94,6 +94,27 @@ main {
     bottom: 0;
 }
 
+@media (max-width: 1150px){
+    .container {
+        height: 250px;
+        flex-direction: column;
+    }
+    .container1 {
+        height: 420px;
+        width: 350px;
+    }
 
+    .imagem{
+        width: 450px;
+        height: 450px;
+    }
 
-@media
+    .text{
+        font-size: 35px;
+    }
+
+    .botao{
+        justify-content: flex-start;
+        width: 250px;
+    }
+}
