@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: black;
     color: white;
@@ -10,16 +15,10 @@ body {
 }
 
 header {
-    height: 80px;
     width: 100%;
-    text-align: center;
-    padding: 20px 0;
     border-top: 10px solid purple;
     border-bottom: 10px solid purple;
-    position: fixed;
-    top: 0;
-    background-color: black;
-    z-index: 1000;
+    text-align: center;
 }
 
 main {
@@ -31,44 +30,27 @@ main {
 }
 
 .container {
+    width: 600px;
+    height: 200px;
+    margin-right: -20px;
+    margin-top: -10px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(80vh - 50px);
-    width: 100vw;
-    margin-inline: 200px;
-  }
-
-.container1 {
-    display: flex;
-    height: 500px;
-    width: 900px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.imagem {
-    height: 800px;
-    width: 900px;
-    position: relative;
-}
-
-.text {
-    position: absolute;
-    font-size: 70px; 
+    font-size: 60px;
     white-space: nowrap;
+    padding: 20px;
+
   }
+
+
 
   .botao {
-    height: calc(100vh - 126px);
+    width: 600px;
+    padding: 50px;
+    height: 300px;
     display: flex;
-    justify-content: center;
+    margin-top: -100px;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    width: 650px;
+    justify-content: center;
 }
 
 .btn{
@@ -91,31 +73,21 @@ main {
     width: 100%;
     background-color: black;
     color: white;
-    position: fixed;
     bottom: 0;
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1000px){
     .container {
-        height: 250px;
+        height: 100px;
+        width: 100px;
         flex-direction: column;
-    }
-    .container1 {
-        height: 420px;
-        width: 350px;
-    }
-
-    .imagem{
-        width: 450px;
-        height: 450px;
-    }
-
-    .text{
-        font-size: 35px;
-    }
-
-    .botao{
         justify-content: flex-start;
+    }
+   
+    .botao{
+        flex-direction: column;
         width: 250px;
+        height: 100px; 
+        justify-content: flex-start;
     }
 }
