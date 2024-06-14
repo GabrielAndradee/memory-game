@@ -33,9 +33,9 @@ header{
     width: 65vw;
     height: 50vw;
     padding: 20px 20px 20px 20px;
-    border: 10px solid rebeccapurple;
+    border: 10px solid rgb(162, 0, 255);
     margin-top: 10px;
-    background-color: yellow;
+    background-color: rgb(255, 0, 0);
 }
 
 .texto{
