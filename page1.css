@@ -47,8 +47,16 @@ header{
   
 }
 
-.img{
-    width: 150px;
-    height: 150px;
-    padding: 10px;
+.memory-card{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+
 }
+
+.memory-card .front-face,
+.memory-card .back-face{  
+    width: 100%;
+    height: 100%;
+}
+
